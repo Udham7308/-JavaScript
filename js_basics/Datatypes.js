@@ -47,8 +47,28 @@ let myobj={
     console.log("Hello World");
     
  }
- console.log(typeof myfunction);
- console.log(typeof myobj);
-console.log(typeof heros);
+// console.log(typeof myfunction);
+// console.log(typeof myobj);
+// console.log(typeof heros);
 
+// ........................> Memory Usage
 
+//  Primitive(Stack memory), Non-primitive (Heap Memory)
+// In stack memory we get a copy of variable and in heap memory, a reference for original variable in which we can changes.
+
+let myYoutubename = "Udham7308"
+let anotherName = myYoutubename
+anotherName = "AnimeEditX"
+
+// console.log(myYoutubename);
+// console.log(anotherName);
+
+let user1 = {
+   email: "user@gmail.com",
+   upi:"user@sbi"
+}
+let user2 = user1;
+
+user2.email = "udham@google.com" // Access of property of a object is given to other object by dot(.)
+console.log(user1.email);
+console.log(user2.email);
