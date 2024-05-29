@@ -14,16 +14,41 @@ let age = 18
 let isLoggedIn = false
 let state;
 
-// number => 2 to power 53
-// bigint
-// string => ""
-// boolean => true/false
-// null => standalone value
-// undefined => 
-// symbol => unique
+/*  Primitive datatypes =>  call by value
+number => 2 to power 53
+bigint
+string => ""
+boolean => true/false
+null => standalone value => empty
+undefined => value not provided yet.
+symbol => unique
+
+// Non-primitive datatypes => call by reference
+ Functions
+ object
+Arrays 
+*/ // above all's datatype is called as function
+
+//console.log(typeof undefined); // undefined
+//console.log(typeof null); // object
+const id = Symbol('123');
+const anotherId = Symbol('123')
+//console.log(id===anotherId); // false 
+const bignum = 1111111111111112690n;
+
+const heros =["Shaktiman","Naagraj","Doga","Gangadhar"]; // Array
+
+let myobj={
+    name:"udham Singh",
+    age:18,
+
+ } // Object
+ const myfunction = function(params) {
+    console.log("Hello World");
+    
+ }
+ console.log(typeof myfunction);
+ console.log(typeof myobj);
+console.log(typeof heros);
 
 
-// object
-
-console.log(typeof undefined); // undefined
-console.log(typeof null); // object
