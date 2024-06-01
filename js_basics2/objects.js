@@ -124,13 +124,9 @@ const course = {
  
 // API formates (i) JSON Formate.(ii) Arrays
 { // JSON formate .--> {}. In it we have keys and values as strings.
-    "name": "hitesh",
-    "coursename": "js in hindi",
-    "price": "free"
-}
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
 
-[ 
-    {},
-    {},
-    {}
-]
+[ {}, {}, {} ]
