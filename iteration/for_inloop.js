@@ -12,7 +12,9 @@ for (const key in myObject) {
 const programming = ["js", "rb", "py", "java", "cpp"]
 
 for (const key in programming) {
-  //  console.log(programming[key]);
+   // console.log(key); // 0 1 2 3 4
+  //console.log(programming[key]); //js rb  py  java   cpp
+  
 }
 
 const map = new Map()
@@ -22,5 +24,5 @@ map.set('Fr', "France")
 map.set('IN', "India")
 
 for (const key in map) {
-    console.log(key);
+    console.log(key); // map is not iteratable
 }
