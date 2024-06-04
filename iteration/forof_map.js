@@ -7,7 +7,7 @@
 const number = [1,2,3,4,5,6]
 
 for (const num of  number) {
-    console.log(num);
+    //console.log(num);
 }
 
 const greetings = 'helloworld'
@@ -29,14 +29,14 @@ map.set('IN', 'India')
 //     //console.log(key,':-',value);    
 // }
 for (const key of map) {
-    //console.log(key);
+    console.log(key);
 }
 
 const myObject ={ // Here myObject is not iterable.
     game1: 'NFS',
     game2: 'COD'
 }
-for (const [key,value] of myObject) {
-    //console.log(key,':-',value);
-}
+// for (const [key,value] of myObject) {
+//     //console.log(key,':-',value);
+// }
 
