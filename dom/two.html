@@ -7,33 +7,37 @@
     <title>DOM | Chai aur code</title>
 </head>
 <body style="background-color: #212121; color: #fff;">
-    <div class="parent">
-        <!-- this is a comment -->
-        <div class="day">Monday</div>
-        <div class="day">Tuesday</div>
+    <div class="parent"> 
+       <!-- After everyline break there is a textnode .even comment is also a node.-->
+        <div class="day">Monday</div> 
+        <div class="day">Tuesday</div>  
         <div class="day">Wednesday</div>
         <div class="day">Thursday</div>
     </div>
-</body>
+</body> 
 <script>
     const parent = document.querySelector('.parent')
     // console.log(parent);
-    // console.log(parent.children);
-    // console.log(parent.children[1].innerHTML);
+    // console.log(parent.children); //  HTML collection of divs
+    // console.log(parent.children[1].innerHTML); // tuesday
 
-    // for (let i = 0; i < parent.children.length; i++) {
-    //      console.log(parent.children[i].innerHTML);
-        
+    // for (let i = 0; i< parent.children.length; i++) {
+    //   console.log(parent.children[i].innerHTML);       
     // }
-    parent.children[1].style.color = "orange"
-    // console.log(parent.firstElementChild);
-    // console.log(parent.lastElementChild);
 
-    const dayOne = document.querySelector('.day')
-    // console.log(dayOne);
-    // console.log(dayOne.parentElement);
-    // console.log(dayOne.nextElementSibling);
+    parent.children[0].style.color = 'Crimson'
+    parent.children[1].style.color = 'green'
 
-    console.log("NODES: ", parent.childNodes);
-</script>
+    //console.log(parent.firstElementChild); // move from parent to first child
+    //console.log(parent.lastElementChild); // move from parent to last child
+   
+   const dayone = document.querySelector('.day')
+  // console.log(dayone);//<div class="day" style="color: crimson;">Monday</div>
+  // console.log(dayone.parentElement); // move from child to parent.
+  // console.log(dayone.nextElementSibling); // 
+
+   console.log("NODES:",parent.childNodes);
+
+
+   </script>
 </html>
