@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){ // it sets a timer which executes a function or specified piece of code once the timer expires.
+    //     console.log("UdhamSingh");
+    // },2000)
+
+    // const HeyUdham = function() {
+    //     console.log("UdhamSingh");
+    // }
+    // setTimeout(HeyUdham,4000);
+
+   const changeText  = function(){
+    document.querySelector("h1").
+    innerHTML = "javaScript Series"}
+   const change = setTimeout(changeText,3000)
+
+   //clearTimeout(change) // it cancels a timeout previously established by calling setTimeout().
+//If the parameter provided does not identify a previously established action, this method does nothing.
+
+document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(change)
+        console.log("STOPPED")
+})
+</script>
+</html>
