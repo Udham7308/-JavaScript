@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api request</title>
+</head>
+<body style="background-color: #212121; color:aliceblue">
+    
+ Api request := The XMLHttpRequest.readyState property returns the state an XMLHttpRequest client is in. An XHR client exists in one of the following states:
+    0	UNSENT	Client has been created. open() not called yet.
+    1	OPENED	open() has been called.
+    2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+    3	LOADING	Downloading; responseText holds partial data.
+    4	DONE	The operation is complete.
+
+    HTTP requests are made to a web server and after they are processed the server returns the updated output in a new page load. In an Ajax request, this sequence of actions happens behind the scenes, asynchronously, so that the user is not interrupted. 
+
+</body>
+<script>
+    const requestUrl = 'https://api.github.com/users/udham7308'
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET',requestUrl)  // open apne aap mai call nahi hota hai.
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            //const data = this.responseText
+            //console.log(typeof data); // String => most of the time response come from url  as in form of String.
+
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data); // object
+            console.log(data.followers);
+        }
+    }
+    xhr.send()// after send open calls.
+
+</script>
+</html>
