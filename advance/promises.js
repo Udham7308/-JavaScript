@@ -107,3 +107,11 @@ fetch('https://api.github.com/users/udham7308')
 })
 .catch((error)=>console.log(error))
 
+/* the global fetch() method starts the process of fetching a resourse from the network,returning a promise which is fulfilled once the response is available.
+It is a more powerful and flexible replacement for XMLHttpRequest.
+The fetch() method takes one mandatory argument, the path to the resource you want to fetch. It returns a Promise that resolves to the Response to that request.
+A fetch() only rejects when a network error is encountered(which is usually when there's a permission issue or similar).
+A fetch() promise does not reject on HTTP errors(404,etc these all are responses). instead , a then() handler must check the Response.ok and/or Response.status properties.
+
+ */
+
