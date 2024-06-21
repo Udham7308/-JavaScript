@@ -43,11 +43,12 @@ function User(username,loginCount,isLoggedIn){
 
 const userOne = new User("udham",12,true)
 const userTwo = new User("Singh",10,true)
-console.log(userOne);
-console.log(userTwo);
+console.log(userOne.constructor); // constructor a reference property about itself object.
+//console.log(userTwo);
 
 /* step 1.As we use new keyword a new empty object creates called as instance.
 step 2. Due to new keyword constructor functions call and provide all arguments.
 step 3. all arguments injects inside this keyword.
 step 4.  then we get the arguments in our function.
 */
+
