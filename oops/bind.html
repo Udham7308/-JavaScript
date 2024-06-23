@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> React</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+</body>
+<script>
+    class React{
+        constructor(){
+            this.library = "React"
+            this.server = "https://localhost:300"
+            
+
+            //reqirement (i) get reference pof button (ii) display on click
+            document
+            .querySelector('button')
+            .addEventListener('click',this.handelClick.
+            bind(this))
+            // bind()--> In JavaScript function binding happens using the Bind() method. With this method, we can bind an object to a common function, so that the function gives different results when needed. otherwise, it gives the same result or gives an error while the code is executing.
+            
+        }
+        handelClick(){
+            console.log("Button clicked");
+            console.log(this.server);
+        }
+    }
+
+    const app = new React()
+</script>
+</html>
