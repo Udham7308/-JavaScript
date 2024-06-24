@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #313131;"> 
+   <button id="orange">orange</button>
+   <button id="green">green</button>
+   
+</body>
+<script>
+    // function outer() {
+    //     let Username = "udham";
+    //     function inner() {    
+    //         let seceret = "MY@123"       
+    //         console.log("inner",Username); 
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo",Username);
+    //         console.log(seceret);// not defined
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer()
+    // console.log("Too Outer",Usernamne);    
+    
+    // Lexical scope -->  inner functions have access to the variables of outer functions.
+    //outer function has not access to the variables of the inner function.
+    
+
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+    // after execution of outer function the scope of inner function will be gone(end).then memory role come in picture.
+    
+    // closuer --> jab hum ek pura function return karte hai tab only function hi return nahi hota balki uska lexical scope return hota hai.
+    
+    // as we execute myfunc = makefunc() and return displayname(), to only displayname() nahi jayega agar uska koi outer function exist karta ha to uska bhi pura scope jayega. 
+
+    
+</script>
+<script>
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = "orange"
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = "green"
+    // }
+
+        function clickHandler(color){
+           //document.body.style.backgroundColor = `${color}`// we need a function on return but we get function executed result. so we have to change our function's defination.
+            return function(){
+                document.body.style.backgroundColor = `${color}`
+            }
+
+        }
+        document.getElementById("orange").onclick = clickHandler("orange")
+        document.getElementById("green").onclick = clickHandler("green")
+
+
+
+
+</script>
+</html>
