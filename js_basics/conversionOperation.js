@@ -1,14 +1,14 @@
 let score = "hitesh"
 
 //console.log(typeof score);
-//console.log(typeof(score));
+//console.log(typeof(score)); // both are same // string
 
 let valueInNumber = Number(score)
-//console.log(typeof valueInNumber);
-//console.log(valueInNumber);
+//console.log(typeof valueInNumber); // number
+//console.log(valueInNumber); //Nan
 
 
-// "33" => 33
+// "33" => 33 // JS convert the string into int for equality 
 // "33abc" => NaN
 //  true => 1; false => 0
 
@@ -53,12 +53,12 @@ let str3 = str1 + str2
 
 // console.log( (3 + 4) * 5 % 3);
 
-// console.log(+true);
-// console.log(+"");
+// console.log(+true); // Unary + converts true to 1
+// console.log(+""); // Unary + converts empty string to 0
 
 let num1, num2, num3
 
-num1 = num2 = num3 = 2 + 2
+num1 = num2 = num3 = 2 + 2 // 4
 
 let gameCounter = 100
 ++gameCounter;
