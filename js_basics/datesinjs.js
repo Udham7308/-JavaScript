@@ -19,7 +19,7 @@ let myDate = new Date()
 //let currentdate = new Date(2023,0,29);
 //console.log(currentdate.toDateString()); // Sun Jan 29 2023
 let currentdate = new Date("01-10-2024");
-//console.log(currentdate.toLocaleDateString()); // Sun Jan 29 2023
+//console.log(currentdate.toLocaleDateString()); // the date string is usually interpreted as MM-DD-YYYY : January 10, 2024
 
 let myTimeStep = Date.now();
 //console.log(myTimeStep);
