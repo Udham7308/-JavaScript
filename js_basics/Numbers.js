@@ -24,10 +24,10 @@ const num2 = 12300000000000;
 // console.log(num2.toLocaleString('en-IN')); // 1,23,00,00,00,00,000
 
 // console.log(Math);
-// console.log(Math.abs(-4));
-// console.log(Math.round(4,6));
-// console.log(Math.ceil(4.2)); //  reaches the top value
-// console.log(Math.floor(4,6));
+// console.log(Math.abs(-4)); // Returns the absolute value
+// console.log(Math.round(4,6));//uses the first parameter
+// console.log(Math.ceil(4.2)); //  reaches the top value //Returns the smallest integer greater than or equal to 4.2
+// console.log(Math.floor(4,6)); //Math.floor only uses the first parameter,
 
 // console.log(Math.max(4,3,6,9)); // Provide the max value
 // console.log(Math.min(4,3,6,9)); // Provide the min value
