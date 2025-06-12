@@ -10,5 +10,5 @@
 // console.log(undefined<0);  // false
 
 // ===  ..> strict check
-console.log("2"===2); // False
+console.log("2"===2); // False // The triple equals (===) checks for both value and type equality.
 console.log("2"==2); // True
